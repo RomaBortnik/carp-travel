@@ -24,3 +24,9 @@ body {
   color: var(--main-text-color);
   background-color: var(--main-bgd-color);
 }
+
+@layer components {
+  .section {
+    @apply py-[56px] md:py-[64px] lg:py-[104px];
+  }
+}

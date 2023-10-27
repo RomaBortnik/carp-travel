@@ -15,9 +15,9 @@ export const Navigation = () => {
   return (
     <nav>
       <ul className="flex gap-12">
-        {navList.map((el, index) => (
-          <a key={index} className="cursor-pointer" href={`#${el.name}`}>
-            {el.title}
+        {navList.map(({ name, title }) => (
+          <a key={name} className="cursor-pointer" href={`#${name}`}>
+            {title}
           </a>
         ))}
       </ul>

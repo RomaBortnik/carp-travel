@@ -1,3 +1,7 @@
 export const SectionGallery = () => {
-  return <section id="gallery">SectionGallery</section>;
+  return (
+    <section id="gallery" className="section">
+      SectionGallery
+    </section>
+  );
 };
