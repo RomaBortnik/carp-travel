@@ -1,3 +1,9 @@
+import { Description } from "./Description";
+import { JoinButton } from "./JoinButton";
+import { LocationsList } from "./LocationsList";
+import { Motto } from "./Motto";
+import { Title } from "./Title";
+
 export const SectionHero = () => {
   return (
     <section
@@ -6,14 +12,16 @@ export const SectionHero = () => {
       md:pt-[122px] 
       lg:pt-[106px]"
     >
-      <div className="container">
-        <h1
-          className="uppercase font-thin text-[40px] leading-[56px] tracking-[-1.6px]
-      md:text-[67px] md:leading-normal md:tracking-[-2.68px]
-      lg:text-[98px] lg:leading-normal lg:tracking-[-3.92px]"
-        >
-          <span className="font-medium">uncover</span> Carpathian’s Secrets
-        </h1>
+      <div className="relative container pt-[76px]">
+        <div>
+          <Title />
+          <LocationsList />
+        </div>
+        <div>
+          <Motto />
+          <Description />
+          <JoinButton />
+        </div>
       </div>
     </section>
   );
