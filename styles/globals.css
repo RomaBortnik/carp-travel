@@ -68,10 +68,44 @@ code {
 
 @layer components {
   .section {
-    @apply py-[56px] md:py-[64px] lg:py-[104px];
+    @apply py-[56px] bg-cover bg-[50%_top] bg-no-repeat
+    md:py-[64px] 
+    lg:py-[104px];
   }
 
   .container {
-    @apply px-[20px] mx-auto sm:w-[320px] md:w-[768px] md:px-[32px] lg:w-[1440px] lg:px-[104px];
+    @apply px-[20px] mx-auto sm:w-[320px] 
+    md:w-[768px] md:px-[32px] 
+    lg:w-[1440px] lg:px-[104px];
+  }
+
+  .section-hero {
+    @apply bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-hero/bgd-mobile-tablet.jpg")]
+    md:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-hero/bgd-mobile-tablet.jpg")]
+    lg:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-hero/bgd-desktop.jpg")];
+  }
+
+  .section-about {
+    @apply bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-about/bgd-mobile.jpg")]
+    md:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-about/bgd-tablet.jpg")]
+    lg:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-about/bgd-desktop.jpg")];
+  }
+
+  .section-career {
+    @apply bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-carrer/bgd-mobile-tablet.jpg")]
+    md:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-carrer/bgd-mobile-tablet.jpg")]
+    lg:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-carrer/bgd-desktop.jpg")];
+  }
+
+  .section-gallery {
+    @apply bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-gallery/bgd-mobile-tablet.jpg")]
+    md:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-gallery/bgd-mobile-tablet.jpg")]
+    lg:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-gallery/bgd-desktop.jpg")];
+  }
+
+  .section-contacts {
+    @apply bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-contacts/bgd-mobile-tablet.jpg")]
+    md:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-contacts/bgd-mobile-tablet.jpg")]
+    lg:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-contacts/bgd-desktop.jpg")];
   }
 }

@@ -10,7 +10,7 @@ import { SectionServices } from "@/components/SectionServices/SectionServices";
 
 export default function Home() {
   return (
-    <main className="px-4">
+    <main>
       <Header />
       <SectionHero />
       <SectionAbout />
