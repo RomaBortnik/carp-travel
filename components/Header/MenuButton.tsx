@@ -15,6 +15,7 @@ export const MenuButton: React.FC<Props> = ({
       name="toggle-menu"
       aria-label="toggle-menu"
       onClick={handleToggleMenu}
+      className="md:hidden"
     >
       {children}
     </button>

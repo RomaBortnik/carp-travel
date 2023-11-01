@@ -6,24 +6,15 @@ import { MenuModal } from "./MenuModal";
 import { NavList } from "./NavList";
 
 export const Navigation = () => {
-  const [screenWidth, setScreenWidth] = useState(() => window.innerWidth);
+  const [screenWidth] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    if (!screenWidth) {
-      setScreenWidth(window.innerWidth);
-    }
-
     window.addEventListener("resize", handleScreenWidth);
     return () => window.removeEventListener("resize", handleScreenWidth);
-  }, [screenWidth]);
-
-  useEffect(() => {
-    const menu = document.querySelector(".menu");
   }, []);
 
   const handleScreenWidth = () => {
-    setScreenWidth(window.innerWidth);
     if (window.innerWidth > 767) {
       document.body.classList.remove("menu-open");
       setIsMenuOpen(false);
@@ -37,12 +28,12 @@ export const Navigation = () => {
 
   return (
     <>
-      <nav>
-        {screenWidth > 767 ? (
-          <NavList />
-        ) : (
-          <MenuButton handleToggleMenu={handleToggleMenu}>Menu</MenuButton>
-        )}
+      <MenuButton handleToggleMenu={handleToggleMenu}>Menu</MenuButton>
+      <nav
+        className="hidden 
+      md:block"
+      >
+        <NavList />
       </nav>
 
       <MenuModal

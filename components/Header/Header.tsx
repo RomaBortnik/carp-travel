@@ -12,7 +12,6 @@ export const Header = () => {
           <Image
             src={logo}
             width={61}
-            height={33}
             alt="CarpTravel logo"
             aria-label="CarpTravel logo"
             priority
