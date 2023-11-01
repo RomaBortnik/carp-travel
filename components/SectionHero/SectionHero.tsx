@@ -14,7 +14,8 @@ export const SectionHero = () => {
     >
       <div
         className="relative container pt-[76px]
-      md:flex gap-[48px]"
+      md:flex md:justify-between
+      "
       >
         <div
           className="mb-[24px]
@@ -23,7 +24,10 @@ export const SectionHero = () => {
           <Title />
           <LocationsList />
         </div>
-        <div className="md:relative md:w-[230px]">
+        <div
+          className="md:relative md:w-[230px]
+        lg:w-[305px]"
+        >
           <Motto />
           <Description />
           <JoinButton />
