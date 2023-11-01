@@ -6,7 +6,7 @@ import { MenuModal } from "./MenuModal";
 import { NavList } from "./NavList";
 
 export const Navigation = () => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(() => window.innerWidth);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -45,7 +45,10 @@ export const Navigation = () => {
         )}
       </nav>
 
-      <MenuModal isMenuOpen={isMenuOpen} handleToggleMenu={handleToggleMenu}></MenuModal>
+      <MenuModal
+        isMenuOpen={isMenuOpen}
+        handleToggleMenu={handleToggleMenu}
+      ></MenuModal>
     </>
   );
 };
