@@ -6,7 +6,11 @@ import logo from "../../public/assets/icons/logo.svg";
 
 export const Header = () => {
   return (
-    <header className="absolute top-0 left-0 w-full pt-9 md:pt-[25px] lg:pt-6">
+    <header
+      className="absolute top-0 left-0 w-full pt-9 
+    md:pt-[25px]
+    lg:pt-6 lg:pb-[88px]"
+    >
       <div className="container flex items-center justify-between">
         <Link href="/">
           <Image

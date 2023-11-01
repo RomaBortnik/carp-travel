@@ -85,7 +85,7 @@ code {
 
 @layer components {
   .section {
-    @apply py-[56px] bg-cover bg-[50%_top] bg-no-repeat
+    @apply py-[56px] bg-no-repeat bg-mobile bg-pos
     md:py-[64px] 
     lg:py-[104px];
   }
@@ -97,32 +97,32 @@ code {
   }
 
   .section-hero {
-    @apply bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-hero/bgd-mobile-tablet.jpg")]
-    md:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-hero/bgd-mobile-tablet.jpg")]
-    lg:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-hero/bgd-desktop.jpg")];
+    @apply bg-[linear-gradient(180deg_,#001826_,#00253100),linear-gradient(to_bottom,_#020f084d,_#020f084d),url("/assets/images/section-hero/bgd-mobile-tablet.jpg")]
+    md:bg-[inear-gradient(180deg_,#001826_,#00253100),linear-gradient(to_bottom,_#020f084d,_#020f084d),url("/assets/images/section-hero/bgd-mobile-tablet.jpg")]
+    lg:bg-[linear-gradient(180deg_,#00182667_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-hero/bgd-desktop.jpg")];
   }
 
   .section-about {
-    @apply bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-about/bgd-mobile.jpg")]
-    md:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-about/bgd-tablet.jpg")]
-    lg:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-about/bgd-desktop.jpg")];
+    @apply bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-about/bgd-mobile.jpg")]
+    md:bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-about/bgd-tablet.jpg")]
+    lg:bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-about/bgd-desktop.jpg")];
   }
 
   .section-career {
-    @apply bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-career/bgd-mobile-tablet.jpg")]
-    md:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-career/bgd-mobile-tablet.jpg")]
-    lg:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-career/bgd-desktop.jpg")];
+    @apply bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-career/bgd-mobile-tablet.jpg")]
+    md:bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-career/bgd-mobile-tablet.jpg")]
+    lg:bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-career/bgd-desktop.jpg")];
   }
 
   .section-gallery {
-    @apply bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-gallery/bgd-mobile-tablet.jpg")]
-    md:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-gallery/bgd-mobile-tablet.jpg")]
-    lg:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-gallery/bgd-desktop.jpg")];
+    @apply bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-gallery/bgd-mobile-tablet.jpg")]
+    md:bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-gallery/bgd-mobile-tablet.jpg")]
+    lg:bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-gallery/bgd-desktop.jpg")];
   }
 
   .section-contacts {
-    @apply bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-contacts/bgd-mobile-tablet.jpg")]
-    md:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-contacts/bgd-mobile-tablet.jpg")]
-    lg:bg-[linear-gradient(to_bottom,_#001826cc,_#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-contacts/bgd-desktop.jpg")];
+    @apply bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-contacts/bgd-mobile-tablet.jpg")]
+    md:bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-contacts/bgd-mobile-tablet.jpg")]
+    lg:bg-[linear-gradient(180deg_,#001826cc_,#00253100),linear-gradient(to_bottom,_#020f0880,_#020f0880),url("/assets/images/section-contacts/bgd-desktop.jpg")];
   }
 }

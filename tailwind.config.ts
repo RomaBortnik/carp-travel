@@ -14,6 +14,15 @@ const config: Config = {
       //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       // },
       fontFamily: { inter: ["Inter", "sans-serif"] },
+      backgroundSize: {
+        mobile: "100% 287px, cover, cover",
+        desktop: "100% 172px, cover, cover",
+      },
+
+      backgroundPosition: {
+        pos: "0 0, center, center",
+      },
+
       screens: {
         sm: "320px",
         md: "768px",

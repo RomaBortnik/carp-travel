@@ -20,12 +20,17 @@ const navList: NavLink[] = [
 export const NavList: React.FC<Props> = ({ handleToggleMenu }: Props) => {
   return (
     <ul
-      className="flex flex-col gap-[48px] 
-      md:flex md:flex-row md:gap-[24px] md:text-[14px] md:tracking-[1.4px] md:leading-[normal] md:font-normal
+      className="flex flex-col gap-[48px] font-normal text-[18px] tracking-[1.8px]
+      md:flex md:flex-row md:gap-[24px] md:text-[14px] md:leading-[normal] md:tracking-[1.4px]
       lg:gap-[56px]"
     >
       {navList.map(({ name, title }) => (
-        <li onClick={handleToggleMenu} key={name} className="cursor-pointer">
+        <li
+          onClick={handleToggleMenu}
+          key={name}
+          className="text-center leading-[normal] cursor-pointer
+          "
+        >
           <Link href={`#${name}`}>{title}</Link>
         </li>
       ))}
