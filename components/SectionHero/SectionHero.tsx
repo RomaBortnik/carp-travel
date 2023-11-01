@@ -12,12 +12,18 @@ export const SectionHero = () => {
       md:pt-[122px] 
       lg:pt-[106px]"
     >
-      <div className="relative container pt-[76px]">
-        <div>
+      <div
+        className="relative container pt-[76px]
+      md:flex gap-[48px]"
+      >
+        <div
+          className="mb-[24px]
+        md:mb-0"
+        >
           <Title />
           <LocationsList />
         </div>
-        <div>
+        <div className="md:relative md:w-[230px]">
           <Motto />
           <Description />
           <JoinButton />
