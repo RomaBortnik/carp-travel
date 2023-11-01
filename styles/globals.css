@@ -23,6 +23,10 @@ body {
   background-color: var(--main-bgd-color);
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -66,29 +70,18 @@ code {
     monospace;
 }
 
-/* .join-btn::before {
-  content: "ф";
-  height: 100%;
-  color: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("/assets/icons/1svgFrame-mobile.svg");
-  background-position: 0;
-  background-size: cover;
-} */
+.menu-container {
+  z-index: 5;
+  background-color: rgba(1, 10, 5, 0.75);
+  backdrop-filter: blur(15px);
+  opacity: 0;
+  visibility: hidden;
+}
 
-/* .join-btn::after {
-  content: "ф";
-  height: 100%;
-  color: transparent;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-image: url("/assets/icons/2svgFrame-mobile.svg");
-  background-position: 100%;
-  background-size: cover;
-} */
+.menu-container.open {
+  opacity: 1;
+  visibility: visible;
+}
 
 @layer components {
   .section {

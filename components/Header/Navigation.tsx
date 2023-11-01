@@ -1,38 +1,51 @@
-type NavLink = {
-  name: string;
-  title: string;
-};
+"use client";
 
-const navList: NavLink[] = [
-  { name: "about", title: "About" },
-  { name: "services", title: "Services" },
-  { name: "career", title: "Career" },
-  { name: "gallery", title: "Gallery" },
-  { name: "contacts", title: "Contacts" },
-];
+import { useEffect, useState } from "react";
+import { MenuButton } from "./MenuButton";
+import { MenuModal } from "./MenuModal";
+import { NavList } from "./NavList";
 
 export const Navigation = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (!screenWidth) {
+      setScreenWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleScreenWidth);
+    return () => window.removeEventListener("resize", handleScreenWidth);
+  }, [screenWidth]);
+
+  useEffect(() => {
+    const menu = document.querySelector(".menu");
+  }, []);
+
+  const handleScreenWidth = () => {
+    setScreenWidth(window.innerWidth);
+    if (window.innerWidth > 767) {
+      document.body.classList.remove("menu-open");
+      setIsMenuOpen(false);
+    }
+  };
+
+  const handleToggleMenu: () => void = () => {
+    setIsMenuOpen(!isMenuOpen);
+    document.body.classList.toggle("menu-open");
+  };
+
   return (
-    <nav>
-      <button
-        type="button"
-        name="toggle-menu"
-        aria-label="toggle-menu"
-        className="md:hidden"
-      >
-        Menu
-      </button>
-      <ul
-        className="hidden 
-      md:flex md:gap-[24px] md:text-[14px] md:tracking-[1.4px] md:leading-[normal] md:font-normal
-      lg:gap-[56px]"
-      >
-        {navList.map(({ name, title }) => (
-          <li key={name} className="cursor-pointer">
-            <a href={`#${name}`}>{title}</a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <>
+      <nav>
+        {screenWidth > 767 ? (
+          <NavList />
+        ) : (
+          <MenuButton handleToggleMenu={handleToggleMenu}>Menu</MenuButton>
+        )}
+      </nav>
+
+      <MenuModal isMenuOpen={isMenuOpen} handleToggleMenu={handleToggleMenu}></MenuModal>
+    </>
   );
 };
