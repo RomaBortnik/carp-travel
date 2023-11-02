@@ -16,7 +16,7 @@ export const NavList: React.FC<Props> = ({ handleToggleMenu }: Props) => {
         <li
           onClick={handleToggleMenu}
           key={name}
-          className="text-center leading-[normal] cursor-pointer
+          className="text-center leading-[normal] cursor-pointer hover:opacity-50 focus:opacity-50 transition-opacity
           "
         >
           <Link href={`#${name}`}>{title}</Link>
