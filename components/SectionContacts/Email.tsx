@@ -8,7 +8,7 @@ export const Email: React.FC = () => {
     lg:ml-0"
     >
       <Link
-        className="text-[14px] leading-[24px]
+        className="text-[14px] leading-[24px] hover:opacity-50 focus:opacity-50 transition-opacity
         md:text-[16px]
         lg:text-[18px]"
         href="mailto:support@carptravel.com"
