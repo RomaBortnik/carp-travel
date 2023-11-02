@@ -20,7 +20,7 @@ export const SocialNetworks: React.FC = () => {
               key={id}
               className="text-[14px] leading-[24px]
             md:text-[16px]
-            lg:text-[18px]"
+            lg:text-[18px] lg:text-end"
             >
               <a
                 href={url}
