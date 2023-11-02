@@ -93,7 +93,7 @@ code {
   .container {
     @apply px-[20px] mx-auto sm:w-[320px] 
     md:w-[768px] md:px-[32px] 
-    lg:w-[1440px] lg:px-[104px];
+    lg:w-[1280px] lg:px-[24px];
   }
 
   .section-hero {
