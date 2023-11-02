@@ -46,8 +46,8 @@ export const MessageInput: React.FC<InputProps & Props> = ({
               handleInputChange("message", e.target.value);
             }}
             className={`flex items-center h-[196px] px-[8px] text-[13px] font-extralight resize-none outline-none leading-[24px] bg-[#ffffff0d] focus:bg-[#ffffff1a] transition-colors 
-        md:h-[215px]
-        lg:text-[20px]`}
+        md:h-[221px]
+        lg:text-[20px] lg:h-[174px]`}
           />
         )}
       />

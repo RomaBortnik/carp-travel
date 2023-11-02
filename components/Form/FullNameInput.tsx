@@ -22,7 +22,7 @@ export const FullNameInput: React.FC<InputProps & Props> = ({
     >
       <span
         className={`text-[12px] font-extralight leading-[24px] tracking-[2.4px] mb-[4px] 
-        lg:mb-[6px] ${errors.fullName ? "text-[#FF5757]" : ""}`}
+         ${errors.fullName ? "text-[#FF5757]" : ""}`}
       >
         Full name
       </span>
@@ -44,7 +44,7 @@ export const FullNameInput: React.FC<InputProps & Props> = ({
             }}
             className={`w-full flex items-center px-[8px] text-[13px] font-extralight outline-none leading-[24px] bg-[#ffffff0d] focus:bg-[#ffffff1a] transition-colors
             md:w-[221px]
-            lg:w-full lg:text-[20px]`}
+            lg:w-full lg:text-[20px] lg:py-[2px]`}
             type="text"
             placeholder="John Smith"
           />
