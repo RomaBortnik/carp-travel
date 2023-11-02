@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { socialNetworks } from "@/helpers/contactsData";
 
 export const SocialNetworks: React.FC = () => {
@@ -22,14 +23,14 @@ export const SocialNetworks: React.FC = () => {
             md:text-[16px]
             lg:text-[18px] lg:text-end"
             >
-              <a
+              <Link
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={text}
               >
                 {text}
-              </a>
+              </Link>
             </li>
           );
         })}

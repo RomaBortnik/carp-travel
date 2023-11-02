@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { phones } from "@/helpers/contactsData";
 
 export const Number: React.FC = () => {
@@ -16,9 +17,9 @@ export const Number: React.FC = () => {
             md:text-[16px]
             lg:text-[18px]"
             >
-              <a href={`tel:${number}`} aria-label="phone">
+              <Link href={`tel:${number}`} aria-label="phone">
                 {text}
-              </a>
+              </Link>
             </li>
           );
         })}

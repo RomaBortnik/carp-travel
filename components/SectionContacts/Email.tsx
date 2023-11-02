@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Email: React.FC = () => {
   return (
     <div
@@ -5,7 +7,7 @@ export const Email: React.FC = () => {
     md:mb-0
     lg:ml-0"
     >
-      <a
+      <Link
         className="text-[14px] leading-[24px]
         md:text-[16px]
         lg:text-[18px]"
@@ -13,7 +15,7 @@ export const Email: React.FC = () => {
         aria-label="email"
       >
         support@carptravel.com
-      </a>
+      </Link>
       <p
         className="text-[12px] font-extralight leading-[20px]
       lg:leading-[24px]"

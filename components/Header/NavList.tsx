@@ -1,21 +1,9 @@
 import Link from "next/link";
+import { navList } from "@/helpers/navData";
 
 interface Props {
   handleToggleMenu?: () => void;
 }
-
-type NavLink = {
-  name: string;
-  title: string;
-};
-
-const navList: NavLink[] = [
-  { name: "about", title: "About" },
-  { name: "services", title: "Services" },
-  { name: "career", title: "Career" },
-  { name: "gallery", title: "Gallery" },
-  { name: "contacts", title: "Contacts" },
-];
 
 export const NavList: React.FC<Props> = ({ handleToggleMenu }: Props) => {
   return (
