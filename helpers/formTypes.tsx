@@ -1,4 +1,4 @@
-import { UseFormRegister, FieldErrors } from "react-hook-form";
+import { FieldErrors } from "react-hook-form";
 
 export type Inputs = {
   fullName: string;

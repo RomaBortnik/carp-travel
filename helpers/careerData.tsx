@@ -1,4 +1,9 @@
+type DescriptionText = string;
 type FeatureList = { id: number; title: string; description: string };
+
+export const FormDescription: DescriptionText = `Don't miss your opportunity! Fill out the form right now and join our team!`;
+export const MainDescription: DescriptionText =
+  "Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission.";
 
 export const featureList: FeatureList[] = [
   {
