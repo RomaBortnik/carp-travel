@@ -12,6 +12,7 @@ export const Header = () => {
     lg:pt-6 lg:pb-[88px]"
     >
       <div className="container flex items-center justify-between">
+        
         <Link href="/">
           <Image
             src={logo}
